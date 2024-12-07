@@ -9,7 +9,7 @@ spring:
         - id: microservice-projet
           uri: lb://microservice-projet
           predicates:
-           -path=/projet/**
+           - path=/projet/**
           filters:
-            -RewritePath=/projet/(?<path>,*),/$\{path}
+            - RewritePath=/projet/(?<path>,*),/$\{path}
       
